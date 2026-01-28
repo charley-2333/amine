@@ -1,0 +1,18 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+body { background: #0b0c10; color: #fff; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #1f2833; }
+header h1 { color: #66fcf1; }
+#search { padding: 8px 12px; border-radius: 20px; border: none; width: 40%; }
+#genre-filter { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
+#genre-filter button { padding: 8px 12px; border-radius: 15px; border: none; background: #45a29e; cursor: pointer; color: #fff; }
+#anime-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; padding: 15px; }
+.anime-card { background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; transition: transform 0.3s; cursor: pointer; }
+.anime-card:hover { transform: scale(1.05); }
+.anime-card img { width: 100%; display: block; }
+.anime-card .info { padding: 10px; }
+.anime-card .info h2 { font-size: 16px; margin-bottom: 5px; color: #ffb347; }
+.anime-card .info p { font-size: 12px; color: #ccc; }
+.anime-card .info a { font-size: 12px; color: #66fcf1; text-decoration: none; }
+#pagination { display: flex; justify-content: center; align-items: center; margin: 20px 0; }
+#pagination button { background: #66fcf1; border: none; padding: 8px 15px; margin: 0 10px; border-radius: 20px; cursor: pointer; font-weight: 600; color: #000; }
+#pagination button:disabled { background: #555; cursor: not-allowed; }
