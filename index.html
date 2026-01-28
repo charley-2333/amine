@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AniVerse</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>AniVerse</h1>
+  <input type="text" id="search" placeholder="Search anime...">
+</header>
+
+<section id="genre-filter">
+  <button data-genre="action">Action</button>
+  <button data-genre="adventure">Adventure</button>
+  <button data-genre="comedy">Comedy</button>
+  <button data-genre="drama">Drama</button>
+  <button data-genre="fantasy">Fantasy</button>
+</section>
+
+<main id="anime-list"></main>
+
+<div id="pagination">
+  <button id="prevPage">Previous</button>
+  <span id="pageInfo"></span>
+  <button id="nextPage">Next</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
